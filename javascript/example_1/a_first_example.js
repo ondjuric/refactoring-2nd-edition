@@ -68,3 +68,6 @@ console.log(htmlStatement(invoices[0], plays));
 //     Othello: $500.00 (40 seats)
 //   Amount owed is $1,730.00
 //   You earned 47 credits
+
+// to run a_first_example, open terminal and type: 
+// node a_first_example.js

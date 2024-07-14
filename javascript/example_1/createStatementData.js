@@ -5,22 +5,11 @@ class PerformanceCalculator {
     }
 
     get amount() {
-        let result = 0;
-        switch (this.play.type) {
-            case "tragedy":
-                throw 'bad thing';
-            case "comedy":
-                throw new Error('subclass responsibility');
-            default:
-                throw new Error(`unknown type: ${this.play.type}`);
-        }
-        return result;
+        throw new Error('subclass responsibility');
     }
 
     get volumeCredits() {
-        let result = 0;
-        result += Math.max(this.performance.audience - 30, 0);
-        return result;
+        return Math.max(this.performance.audience - 30, 0);
     }
 }
 
@@ -49,7 +38,6 @@ class ComedyCalculator extends PerformanceCalculator {
 
     }
 }
-
 
 function createPerformanceCalculator(aPerformance, aPlay) {
     switch (aPlay.type) {
